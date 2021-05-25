@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Shire</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src="contactErr.js"></script>
+    </head>
+    
+    <header id="contactUsHeader">
+        <a href="homepage.php"><img src = "image/camille.png"></a>
+        <h1>Contact Us</h1>
+        <h3>Please fill out this form in a decent manner</h3>
+    </header>
+    
+    <main id="contactUsMain">
+        <form id="feedbackForm" action="add_feedback.php" method="post">
+            <label>Full Name</label><div id="req1" class="require1">*</div><br>
+            <input type="text" name="fname" id="feedName"><br><br>
+            <label>E-mail</label><span id="req2" class="require2">*</span><br>
+            <input type="text" placeholder="example@example.com" name="email" id="feedEmail"><br><br>
+            <label>Message</label><span id="req3" class="require3">*</span><br>
+            <textarea name="message" id="feedMessage"></textarea><br><br>
+            <input type="button" value="Submit" id="contactButton">
+        </form>
+    </main>
+</html>

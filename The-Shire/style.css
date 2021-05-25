@@ -1,0 +1,917 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer, header {
+     background-color: #DAAD86
+}
+
+#navBar {
+    background-color: #FBEEC1;
+    margin-bottom: 20px;
+}
+
+.divheader {
+    padding-top: 40px;
+}
+
+header {
+     height: 60px;
+     margin-bottom: 50px;
+     /*width: 100%;*/
+     margin-left: auto;
+     margin-right: auto; 
+     background-color: #8D8741;
+     box-shadow: 0px 4px 7px black;
+}
+
+body {
+    background-color: #FBEEC1;
+}
+
+li {
+    display: inline;
+}
+
+/*input {
+    width: 75%;
+    height: 20px;
+}*/
+
+.login button{
+    width: 100px;
+    height: 30px;
+}
+
+footer {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    font-family: Mermaid;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.searchBar {
+    display: inline-grid;
+    grid-template-columns: auto 50% auto auto;
+    padding-top: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search {
+    border-radius:5px;
+    padding: 10px;
+    align-self: center;
+}
+
+.search form {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 90% 10%;
+    align-self: center;
+}
+
+.search input {
+    width: 100%;
+}
+
+.cart {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.cart p {
+    position: absolute;
+    font-family: Mermaid;
+    font-weight: bold;
+    z-index: 1000;
+    left: 1475px;
+    top: 30px;
+    border: 2px solid black;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+}
+
+.logo a{
+    font-family: Mermaid;
+    color:black;
+    text-decoration: none;
+}
+
+#logo,h2,#navBar {
+    font-family: Mermaid;
+}
+
+table {
+    width: 450px;
+}
+
+#nonf {
+    width: 300px;
+}
+
+#navBar ul ul {
+    position: absolute;
+    display: none;
+}
+
+#navBar li:hover {
+    background-color: #8D8741;
+    color: #FBEEC1;
+}
+
+#navBar li:hover ul {
+    display: block;
+    float: left;
+    /*border: 2px solid gray;*/
+    /*box-shadow: 0px 4px 7px gray;*/
+    box-shadow: 3px 3px 10px black;
+    margin-top: 1.25em;
+    margin-left: 20em;
+
+}
+
+#navBar li:hover ul table {
+    background-color: #FBEEC1;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#navBar li:hover ul th {
+    text-decoration: underline;
+    text-decoration-color: #8D8741;
+    text-underline-offset: 2px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    color: black;
+}
+
+#navBar li:hover ul td {
+    color: gray;
+    font-size: 85%;
+}
+
+/*a:link {
+    color: gray;
+    text-decoration: none;
+}*/
+#navBar li:hover ul td a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+#navBar li:hover ul td a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+#navBar li:hover ul td a:hover {
+    text-decoration: underline;
+    text-decoration-color: #909090;
+    color: #909090;
+}
+
+#navBar > ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nonfiction {
+    border-right: none;
+}
+#navBar > ul > li {
+    font-weight: bolder;
+    text-align: center;
+    border-right: 2px solid black;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: inline-flex;
+    justify-content: space-evenly; 
+}
+
+#navBar > ul > li li {
+    font-weight: normal;
+    text-align: left;
+}
+
+#navBar #nonfiction:hover ul {
+    margin-left: 8em;
+}
+
+#navBar #teen:hover ul {
+    margin-left: 18.25em;
+}
+
+#navBar #classics:hover ul {
+    margin-left: 18.5em;
+}
+
+#navBar #fantasy:hover ul {
+    margin-left: 18.75em;
+}
+
+#navBar #adult:hover ul {
+    margin-left: 19.5em;
+}
+
+#toprow {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+ 
+#footBar {
+    width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     position: fixed;
+     bottom: 0;
+     height: 2.5rem;
+     background-color: #FBEEC1;
+     text-align: center;
+     display: flex;
+     justify-content: space-evenly;
+     padding: 10px 10px 0;
+ }
+
+.row {
+    height: auto;
+    border: 0px;
+    background-color: #DAAD86;
+    padding: 1em;
+    
+}
+
+.cardrow {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1em;
+}
+
+
+.row h2 {
+    text-align: center;
+}
+
+.card {
+    height: auto;
+    width: auto;
+    float: left;
+    margin: 1em;
+    padding-top: 75%;
+    border: 2px solid black;
+}
+
+@font-face {
+    font-family: Mermaid;
+    src: url(font/Mermaid.ttf);
+}
+
+.acc {
+    text-align: center;
+    align-self: center;
+}
+
+.acc a{
+    text-decoration: none;
+    color: black;
+    font-family: Mermaid;
+}
+
+
+.account, .login, .checkoutconf {
+    text-align: center;
+}
+.login h1 , .checkoutconf h1{
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+#confheader h1 {
+    margin-bottom: .4em;
+    font-style: italic;
+    text-align: center;
+}
+
+.login h2 , .checkoutconf h2{
+    margin-top: 30px;
+}
+.login h3 , .checkoutconf h3{
+    margin-top:30px;
+}
+
+.login, .checkoutconf, .cartdiv, .checkoutdiv, .cartItems, .add_book {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 1px black solid;
+    background-color: #DAAD86;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.account {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 1px black solid;
+    background-color: #DAAD86;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.login input {
+    margin-top:.5em;
+    margin-bottom:.5em;
+    padding: .2em;
+}
+
+.account input {
+    margin-top:.5em;
+    margin-bottom:.5em;
+    padding: .2em;
+    width:75%;
+}
+
+.account h1 {
+    margin-bottom: .5em;
+    font-size: 200%;
+}
+
+.login label {
+    text-align: left;
+    margin-right: 6.0em;
+    margin-left: 2em;
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    font-size: 150%;
+}
+
+.account label, .login label {
+    text-align: left;
+    margin-right: 8.0em;
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    font-size: 150%;
+}
+
+.account span, .login span {
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    color: red;
+    font-size:50%;
+    width:150%;
+}
+
+.login h2 {
+    text-align: left;
+    margin-left: 2.5em;
+}
+
+.account #reset, .account #create, .login #login, .add_book #submit{
+    font-size: larger;
+    margin-top: 20px;
+    margin-right: auto;
+    font-family: Mermaid;
+    width: 120pt;
+    height: 30pt;
+    padding: .2em;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.account #reset:hover, .account #create:hover, .login #login:hover, .add_book #submit:hover {
+    background-color: darkgray;
+    color: white;
+    border: 2px solid darkgray;
+}
+
+.add_book #descrip {
+    margin-left: -48px;
+}
+
+.add_book #descT {
+    margin-top: 5px;
+    width: 160px;
+}
+
+.login input {
+    margin-top:.8em;
+    width: 60%;
+}
+
+.login button, .checkoutconf button  {
+    font-family: Mermaid;
+    margin-top: 1em;
+}
+
+.checkoutconf button {
+    padding: 5px;
+}
+
+.account input:focus , .login input:focus  {
+    background-color: #FBEEC1;
+    border: 2px solid black;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+  position: relative;
+}
+
+.advert {
+    text-align: center;
+}
+
+
+.frow {
+  height: auto;
+  border: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DAAD86;
+  text-align: center;
+}
+
+#bottomBooks {
+    margin-bottom: 3em;
+}
+
+.fcardrow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+  margin-bottom: 0em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  
+}
+
+.fcard {
+  display: block;
+  height: auto;
+  min-width: 15%;
+}
+
+.fcard img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 250px;
+}
+
+.fcard p {
+  text-align: center;
+  font-size: large;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.fcard a, .results-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.fcard a:hover, .results-card a:hover {
+    text-decoration-color: #606060;
+    color: #383838;
+    text-decoration: underline;
+}
+
+.account input[required], .login input[required] {
+    border: 2px solid red;
+}
+
+.account input:valid {
+    border: none;
+}
+
+.filter{
+    float: left;
+    
+}
+
+.cartdiv {
+    float : left;
+   
+}
+
+#checkoutMain{
+    display: flex;
+    padding-bottom: 4em;
+}
+
+.cardRow{
+    /*flex: 75%;*/
+    /*margin-right: 15em;*/
+    margin-right: 5em;
+    flex: 30%;
+}
+
+.cartItems{
+    flex: 25%;
+    margin-right: 2em;
+    background-color: #DAAD86;
+    height:75%;
+    width: 100%;
+}
+
+.cartItems h4{
+    font-size: large;
+    margin-bottom: 2em;
+}
+
+.cartItems p{
+    margin-top: 1em;
+}
+
+#checkoutMain input[type=text] {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(155, 148, 148);
+  border-radius: 3px;
+}
+
+#checkoutMain label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#checkoutMain .btn {
+  background-color: #DAAD86;
+  height: 3em;
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 97.5%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#checkoutMain .btn:hover {
+  background-color: #45a049;
+}
+
+#checkoutMain table {
+    /*border: 2px solid black;*/
+    width: 575px;
+    border-collapse: collapse;
+}
+
+#checkoutMain th {
+    padding-bottom: 5px;
+}
+
+#checkoutMain td {
+    border-top: 1px solid black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#checkoutMain #title {
+    text-align: left;
+    padding-left: 15px;
+    width: 300px;
+}
+
+#checkoutMain a:link {
+    color: #585858;
+    text-decoration: none;
+}
+
+#checkoutMain a:visited {
+    color: #585858;
+    text-decoration: none;
+}
+
+#checkoutMain a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+
+#checkoutMain span.price, #checkoutMain #pr {
+  float: right;
+  color: black;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+
+#checkoutMain hr{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.item-body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+    display: grid;
+    float: right;
+    border-radius: 15px;
+}
+
+
+.individual-center-col p {
+    padding-bottom: .5em;
+    /*border-radius: 15px;*/
+}
+
+.individual-center-col button {
+    padding: .4em;
+}
+
+.individual-center-col h2 {
+    padding-top: .6em;
+}
+
+.individual-center-col {
+    background-color: #DAAD86;
+    padding-top: 1em;
+    text-align: center;
+    padding-left:0px;
+    margin-right: 100px;
+    height: 65%;
+    width:70%;
+    margin-top: 70px;
+    margin-left: 0;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px black;
+}
+
+#addtocart {
+    width:50%;
+    height: 10%;
+    margin-top:20px;
+    margin-bottom:400px;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: Mermaid;
+
+}
+
+#delete {
+    width:30%;
+    height: 100%;
+    margin-top:20px;
+    margin-bottom:400px;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: Mermaid;
+    padding:3px;
+}
+
+.description {
+    padding:11px;
+}
+
+
+.individual-center-col h1{
+    padding-bottom:.5em;
+}
+
+#quantity {
+    float:left;
+    margin-right: -20px;
+    margin-top:30px;
+    padding-left:200px;
+    font-size: 115%;
+}
+
+#numBooks {
+    width:10%;
+    margin-top:30px;
+    margin-left:-180px;
+}
+
+.bookimage img{
+    float: left;
+    padding-left: 375px;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 100px;
+    margin-top: 30px;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.individual-card h2 {
+    height: auto;
+}
+
+#contactUsHeader { 
+    padding-top: 2em;
+    padding-bottom: 6em;
+    text-align: center;
+}
+
+#contactUsMain {
+    text-align: center;
+}
+
+#contactUsMain input {
+    width: 30%;
+    text-align: center;
+}
+
+#contactUsMain textarea {
+    height: 100px;
+    width: 400px;
+}
+
+#contactUsMain #feedbackForm .require1 {
+    position: absolute;
+    left: 51em;
+    top: 14.5em;
+    color: red;
+}
+
+#contactUsMain #feedbackForm .require2 {
+    position: absolute;
+    left: 51em;
+    top: 18em;
+    color: red;
+}
+
+#contactUsMain #feedbackForm .require3 {
+    position: absolute;
+    left: 51em;
+    top: 22em;
+    color: red;
+}
+
+#response {
+    position: absolute;
+    top: 50em;
+}
+
+#contactButton {
+    height: 30px;
+    font-size: 20px;
+    background-color: #DAAD86;
+    border: none;
+}
+
+#termsAndConditionsHeader h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#termsAndConditionsMain {
+    margin-top: 5em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#termsAndConditionsMain p {
+    text-align: left;
+}
+
+#termsAndConditionsMain a:visited, #termsAndConditionsMain a:link {
+    color: gray;
+}
+
+#contactButton:hover {
+    background-color: #45a049;
+}
+
+#copyright {
+    position: absolute;
+    display: none;
+    background-color: #DAAD86;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 7px;
+    padding: 5px;
+    top: -1.75em;
+    left: 13em;
+}
+
+.results {
+    float: left;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: .5em;
+    margin-bottom: 4em;
+}
+
+.results-card {
+    display: block;
+    align-content: center;
+    padding: 1em;
+    border: 1px solid black;
+    background-color: #DAAD86;
+}
+
+.results-card img {
+    display: block;
+    width: 100%
+}
+
+.results-card h2, h3, p {
+    text-align: center;
+}
+
+.filters {
+    float: left;
+    text-align: left;
+    width: 15%;
+    border: 2px solid black;
+    background-color: #DAAD86;
+    box-shadow: 3px 3px 10px black;
+    margin-right: 85px;
+    border-radius: 25px;
+}
+
+#filtered input {
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+#filtered p {
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-align: left;
+    margin-left: 10px;
+    text-decoration: underline;
+    text-decoration-color: #8D8741;
+    text-underline-offset: 2px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#filtered #submit {
+    border-radius: 15px;
+    background-color: #FBEEC1;
+    font-family: Mermaid;
+    border: none;
+    padding: 5px;
+    margin-left: 30%;
+}
+
+#filtered #submit:hover {
+    background-color: #8D8741;
+    color:#FBEEC1;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkoutconf table {
+    width: 100%;
+}
+
+.checkoutconf a {
+    text-decoration: none;
+    color: black;
+}
